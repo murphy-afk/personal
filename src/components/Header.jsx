@@ -10,14 +10,14 @@ export default function Header() {
   ]
 
   return (
-    <header className="backdrop-blur-md bg-gradient-to-r from-purple-300/70 via-purple-200/60 to-purple-500/70 shadow-lg rounded-b-3xl px-6 py-4">
+    <header className="backdrop-blur-md bg-gradient-to-r from-purple-400/70 via-purple-300/60 to-purple-500/70 shadow-lg rounded-b-3xl px-8 py-5 border-b border-[rgb(238,193,127)]/40">
       <nav>
-        <ul className="flex space-x-6">
+        <ul className="flex justify-center space-x-6">
           {navLinks.map((link) => (
             <li key={link.name}>
               <Link
                 to={link.href}
-                className="text-gray-700 font-medium px-4 py-2 rounded-xl hover:bg-white/60 hover:text-gray-900 transition-all duration-300 shadow-sm hover:shadow-md">
+                className="text-purple-900 font-medium px-4 py-2 rounded-xl hover:bg-[rgb(238,193,127)] hover:text-purple-950 transition-all duration-300 shadow-sm hover:shadow-md">
                 {link.name}
               </Link>
             </li>
