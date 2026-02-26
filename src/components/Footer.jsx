@@ -8,21 +8,48 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="backdrop-blur-md bg-gradient-to-r from-purple-400/70 via-purple-300/60 to-purple-500/70 shadow-inner rounded-t-3xl px-8 py-6 border-t border-[rgb(238,193,127)]/40 mt-12">
-      <div className="flex flex-col items-center space-y-3 text-purple-900">
+    <footer
+      className="
+        backdrop-blur-sm
+        bg-purple-700/60
+        border-b-4 border-[rgb(238,193,127)]
+        shadow-[0_4px_0_rgba(0,0,0,0.25)]
+        px-8 py-4
+        rounded-none
+      "
+    >
+      <div className="flex flex-col items-center space-y-4 text-purple-900 font-bold tracking-wide uppercase">
+
         <p className="text-sm opacity-90">
-          © {new Date().getFullYear()} Noemi Bardarè
+          © {new Date().getFullYear()} Copyright
         </p>
+
         <div className="flex space-x-4">
           {links.map((link) => (
             <Link
               key={link.name}
               to={link.href}
-              className="text-purple-900 font-medium px-4 py-2 rounded-xl hover:bg-[rgb(238,193,127)] hover:text-purple-950 transition-all duration-300 shadow-sm hover:shadow-md">
+              className="
+                px-4 py-2
+                bg-white/40
+                border-2 border-purple-900
+                shadow-[0_3px_0_rgba(0,0,0,0.4)]
+                text-purple-900
+                transition-all duration-150
+
+                hover:bg-[rgb(238,193,127)]
+                hover:text-purple-950
+                hover:shadow-[0_3px_0_rgba(0,0,0,0.6)]
+
+                active:translate-y-[2px]
+                active:shadow-[0_1px_0_rgba(0,0,0,0.4)]
+              "
+            >
               {link.name}
             </Link>
           ))}
         </div>
+
       </div>
     </footer>
   )

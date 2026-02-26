@@ -10,14 +10,36 @@ export default function Header() {
   ]
 
   return (
-    <header className="backdrop-blur-md bg-gradient-to-r from-purple-400/70 via-purple-300/60 to-purple-500/70 shadow-lg rounded-b-3xl px-8 py-5 border-b border-[rgb(238,193,127)]/40">
+    <header
+      className="
+        backdrop-blur-sm
+        bg-purple-700/60
+        border-b-4 border-[rgb(238,193,127)]
+        shadow-[0_4px_0_rgba(0,0,0,0.25)]
+        px-8 py-4
+        rounded-none
+      "
+    >
       <nav>
-        <ul className="flex justify-center space-x-6">
+        <ul className="flex justify-center space-x-4">
           {navLinks.map((link) => (
             <li key={link.name}>
               <Link
                 to={link.href}
-                className="text-purple-900 font-medium px-4 py-2 rounded-xl hover:bg-[rgb(238,193,127)] hover:text-purple-950 transition-all duration-300 shadow-sm hover:shadow-md">
+                className="
+                  text-purple-900 font-bold tracking-wide
+                  px-4 py-2
+                  bg-white/40
+                  border-2 border-purple-900/40
+                  shadow-[0_3px_0_rgba(0,0,0,0.35)]
+                  hover:bg-[rgb(238,193,127)]
+                  hover:text-purple-950
+                  hover:shadow-[0_3px_0_rgba(0,0,0,0.6)]
+                  active:translate-y-[2px]
+                  active:shadow-[0_1px_0_rgba(0,0,0,0.4)]
+                  transition-all duration-150
+                "
+              >
                 {link.name}
               </Link>
             </li>
