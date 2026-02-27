@@ -12,12 +12,15 @@ export default function Header() {
   return (
     <header
       className="
-        backdrop-blur-sm
-        bg-purple-700/60
-        border-b-4 border-[rgb(238,193,127)]
-        shadow-[0_4px_0_rgba(0,0,0,0.25)]
         px-8 py-4
+        border-b-4 border-green-900
+        bg-[#D7D3E0]/70
+        backdrop-blur-sm
+        shadow-[0_4px_0_#2C1E2E]
         rounded-none
+
+        bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)]
+        bg-size-[6px_6px]
       "
     >
       <nav>
@@ -27,17 +30,20 @@ export default function Header() {
               <Link
                 to={link.href}
                 className="
-                  text-purple-900 font-bold tracking-wide
                   px-4 py-2
-                  bg-white/40
-                  border-2 border-purple-900/40
-                  shadow-[0_3px_0_rgba(0,0,0,0.35)]
-                  hover:bg-[rgb(238,193,127)]
-                  hover:text-purple-950
-                  hover:shadow-[0_3px_0_rgba(0,0,0,0.6)]
-                  active:translate-y-[2px]
-                  active:shadow-[0_1px_0_rgba(0,0,0,0.4)]
+                  font-bold tracking-wide uppercase
+                  text-green-950
+                  bg-[#EEEAF7]
+                  border-2 border-green-900
+                  shadow-[0_3px_0_#2C1E2E]
                   transition-all duration-150
+
+                  hover:bg-green-700/60
+                  hover:text-[#2C1E2E]
+                  hover:shadow-[0_3px_0_#1A1A1A]
+
+                  active:translate-y-0.5
+                  active:shadow-[0_1px_0_#1A1A1A]
                 "
               >
                 {link.name}
