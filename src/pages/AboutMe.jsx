@@ -1,4 +1,4 @@
-export default function Home() {
+export default function AboutMe() {
   return (
     <div className="space-y-10">
 

@@ -11,7 +11,7 @@ export default function Footer() {
     <footer
       className="
         px-8 py-4
-        border-b-4 border-[#3E246B]
+        border-b-4 border-green-900
         bg-[#D7D3E0]/70
         backdrop-blur-sm
         shadow-[0_4px_0_#2C1E2E]
