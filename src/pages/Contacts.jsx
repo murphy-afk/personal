@@ -1,6 +1,12 @@
 import emailjs from "emailjs-com";
+import { Link } from "react-router-dom";
 
 export default function Contacts() {
+
+  const links = [
+    { name: 'GitHub', href: 'https://github.com/murphy-afk' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/noemi-bardar%C3%A8-2373a8375/' }
+  ]
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -11,14 +17,14 @@ export default function Contacts() {
       e.target,
       "LjA5Wns-yjcERNBd2"
     )
-    .then(() => {
-      alert("Message sent!");
-      e.target.reset();
-    })
-    .catch((error) => {
-      console.error("EmailJS error:", error);
-      alert("Something went wrong. Try again later.");
-    });
+      .then(() => {
+        alert("Message sent!");
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS error:", error);
+        alert("Something went wrong. Try again later.");
+      });
   }
 
   return (
@@ -40,11 +46,11 @@ export default function Contacts() {
               shadow-[0_2px_0_rgba(0,0,0,0.4)]"></span>
           </h2>
           <p className="text-green-900/80 font-semibold">
-            <a 
+            <Link
               href="mailto:noemibardare@gmail.com"
               className="hover:text-green-700 transition-all hover:translate-x-1 inline-block">
               noemibardare@gmail.com
-            </a>
+            </Link>
           </p>
         </div>
         <div
@@ -82,12 +88,11 @@ export default function Contacts() {
               shadow-[0_2px_0_rgba(0,0,0,0.4)]"></span>
           </h2>
           <ul className="space-y-1 text-green-900/80 font-semibold">
-            <li className="hover:text-green-700 hover:translate-x-1 transition-all">
-              <a href="#" target="_blank">GitHub</a>
-            </li>
-            <li className="hover:text-green-700 hover:translate-x-1 transition-all">
-              <a href="#" target="_blank">LinkedIn</a>
-            </li>
+            {links.map(link => (
+              <li className="hover:text-green-700 hover:translate-x-1 transition-all" key={link.name}>
+                <Link to={link.href} target="blank">{link.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div
@@ -110,12 +115,12 @@ export default function Contacts() {
               type="text"
               name="name"
               placeholder="Your Name"
-              className="w-full p-2 border-2 border-green-900 bg-white/60 font-medium text-green-900 focus:outline-none"/>
+              className="w-full p-2 border-2 border-green-900 bg-white/60 font-medium text-green-900 focus:outline-none" />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
-              className="w-full p-2 border-2 border-green-900 bg-white/60 font-medium text-green-900 focus:outline-none"/>
+              className="w-full p-2 border-2 border-green-900 bg-white/60 font-medium text-green-900 focus:outline-none" />
             <textarea
               name="message"
               placeholder="Your Message"

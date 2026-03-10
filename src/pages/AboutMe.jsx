@@ -36,9 +36,7 @@ export default function AboutMe() {
             transition-all duration-200
             hover:translate-y-1 hover:shadow-[0_2px_0_rgba(0,0,0,0.4)]
             bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)]
-            bg-size-[6px_6px]
-          "
-        >
+            bg-size-[6px_6px]">
           <h2 className="text-xl font-bold text-green-950 mb-4 relative inline-block tracking-wide uppercase">
             Skills
             <span className="absolute left-0 -bottom-2 w-full h-3 
@@ -100,7 +98,7 @@ export default function AboutMe() {
           </h3>
 
           <ul className="space-y-1 text-green-900/80 font-semibold">
-            <li className="hover:text-green-700 hover:translate-x-1 transition-all">Python</li>
+            {/* <li className="hover:text-green-700 hover:translate-x-1 transition-all">Python</li> */}
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">Typescript</li>
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">Angular</li>
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">Java</li>

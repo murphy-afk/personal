@@ -38,11 +38,9 @@ export default function Footer() {
                 shadow-[0_3px_0_rgba(0,0,0,0.4)]
                 text-green-900
                 transition-all duration-150
-
                 hover:bg-green-700/60
                 hover:text-green-950
                 hover:shadow-[0_3px_0_rgba(0,0,0,0.6)]
-
                 active:translate-y-0.5
                 active:shadow-[0_1px_0_rgba(0,0,0,0.4)]
               "

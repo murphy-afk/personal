@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export default function Header() {
   const navLinks = [
     { name: 'About me', href: '/aboutme' },
-    // { name: 'Projects', href: '/projects' },
+    // { name: 'Projects', href: '/projects'},
     { name: 'Contact', href: '/contact' },
     { name: 'Blog', href: '/blog' },
     { name: 'Play', href: '/play' },
@@ -17,37 +17,30 @@ export default function Header() {
         bg-[#D7D3E0]/70
         backdrop-blur-sm
         shadow-[0_4px_0_#2C1E2E]
-        rounded-none
-
         bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)]
-        bg-size-[6px_6px]
-      "
-    >
+        bg-size-[6px_6px]">
       <nav>
         <ul className="flex justify-center space-x-4">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <Link
+              <NavLink
                 to={link.href}
-                className="
+                className={({ isActive }) =>
+                  `
                   px-4 py-2
                   font-bold tracking-wide uppercase
-                  text-green-950
-                  bg-[#EEEAF7]
                   border-2 border-green-900
                   shadow-[0_3px_0_#2C1E2E]
                   transition-all duration-150
-
-                  hover:bg-green-700/60
-                  hover:text-[#2C1E2E]
-                  hover:shadow-[0_3px_0_#1A1A1A]
-
+                  ${isActive
+                    ? "bg-green-700/60 text-[#2C1E2E] shadow-[0_3px_0_#1A1A1A]"
+                    : "bg-[#EEEAF7] text-green-950 hover:bg-green-700/60 hover:text-[#2C1E2E] hover:shadow-[0_3px_0_#1A1A1A]"
+                  }
                   active:translate-y-0.5
                   active:shadow-[0_1px_0_#1A1A1A]
-                "
-              >
+                `}>
                 {link.name}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
