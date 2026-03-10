@@ -2,9 +2,8 @@ import { Link } from "react-router-dom"
 
 export default function Footer() {
   const links = [
-    { name: 'GitHub', href: 'https://github.com' },
-    { name: 'LinkedIn', href: 'https://linkedin.com' },
-    { name: 'Email', href: 'mailto:noemibardare@gmail.com' }
+    { name: 'GitHub', href: 'https://github.com/murphy-afk' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/noemi-bardar%C3%A8-2373a8375/' }
   ]
 
   return (
@@ -31,6 +30,7 @@ export default function Footer() {
             <Link
               key={link.name}
               to={link.href}
+              target="blank"
               className="
                 px-4 py-2
                 bg-white/40
