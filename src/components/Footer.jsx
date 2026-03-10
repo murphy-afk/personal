@@ -30,7 +30,7 @@ export default function Footer() {
             <Link
               key={link.name}
               to={link.href}
-              target="blank"
+              target="_blank"
               className="
                 px-4 py-2
                 bg-white/40

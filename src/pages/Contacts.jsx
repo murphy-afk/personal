@@ -90,7 +90,7 @@ export default function Contacts() {
           <ul className="space-y-1 text-green-900/80 font-semibold">
             {links.map(link => (
               <li className="hover:text-green-700 hover:translate-x-1 transition-all" key={link.name}>
-                <Link to={link.href} target="blank">{link.name}</Link>
+                <Link to={link.href} target="_blank">{link.name}</Link>
               </li>
             ))}
           </ul>
