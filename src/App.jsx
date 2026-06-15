@@ -31,9 +31,9 @@ function App() {
         </Route>
         <Route path='/' element={<GamesLayout />}>
           <Route path='/play/guess' element={<Guess />} />
-          {/* <Route path='/play/snake' element={<Snake />} /> */}
-          {/* <Route path='/play/memory' element={<Memory />} /> */}
-          {/* <Route path='/play/pixelpainter' element={<PixelPainter />} /> */}
+          <Route path='/play/snake' element={<Snake />} />
+          <Route path='/play/memory' element={<Memory />} />
+          <Route path='/play/pixelpainter' element={<PixelPainter />} />
         </Route>
         <Route path='*' element={<PageNotFound />} />
       </Routes>
