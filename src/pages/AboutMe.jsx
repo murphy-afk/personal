@@ -23,7 +23,7 @@ export default function AboutMe() {
         </h2>
 
         <p className="mt-4 text-green-900/80 max-w-xl mx-auto font-medium">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut quidem assumenda officiis commodi deserunt est? Maxime quibusdam iusto fuga ut, aliquam voluptates nobis atque dicta quisquam quia perspiciatis facere!
+          
         </p>
       </section>
 
@@ -46,12 +46,14 @@ export default function AboutMe() {
 
           <ul className="space-y-1 text-green-900/80 font-semibold">
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">HTML</li>
-            <li className="hover:text-green-700 hover:translate-x-1 transition-all">CSS (Bootstrap & Tailwind)</li>
+            <li className="hover:text-green-700 hover:translate-x-1 transition-all">CSS</li>
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">Javascript</li>
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">React.js</li>
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">Node.js</li>
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">Express.js</li>
             <li className="hover:text-green-700 hover:translate-x-1 transition-all">MySQL</li>
+            <li className="hover:text-green-700 hover:translate-x-1 transition-all">PHP</li>
+            <li className="hover:text-green-700 hover:translate-x-1 transition-all">Laravel</li>
           </ul>
         </div>
 
@@ -74,8 +76,7 @@ export default function AboutMe() {
           </h3>
 
           <ul className="space-y-1 text-green-900/80 font-semibold">
-            <li className="hover:text-green-700 hover:translate-x-1 transition-all">PHP</li>
-            <li className="hover:text-green-700 hover:translate-x-1 transition-all">Laravel</li>
+          <li className="hover:text-green-700 hover:translate-x-1 transition-all">Phyton</li>
           </ul>
         </div>
 

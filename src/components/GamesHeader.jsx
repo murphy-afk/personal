@@ -16,7 +16,7 @@ export default function GamesHeader() {
             <li>
               <Link
               to={'/play'}
-              target="blank"
+
               className="
                 px-4 py-2
                 bg-white/40

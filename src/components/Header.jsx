@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom"
 
 export default function Header() {
   const navLinks = [
-    { name: 'About me', href: '/aboutme' },
+    { name: 'Home', href: '/aboutme' },
     // { name: 'Projects', href: '/projects'},
     { name: 'Contact', href: '/contact' },
-    { name: 'Blog', href: '/blog' },
+    // { name: 'Blog', href: '/blog' },
     { name: 'Play', href: '/play' },
   ]
 
