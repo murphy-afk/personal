@@ -5,3 +5,9 @@ services:
       dockerfile: Dockerfile
     container_name: my-site
     restart: unless-stopped
+    networks:
+      - services
+
+networks:
+  services:
+    external: true
