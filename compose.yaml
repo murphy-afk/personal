@@ -4,6 +4,4 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: my-site
-    ports:
-      - "8080:80"
     restart: unless-stopped
