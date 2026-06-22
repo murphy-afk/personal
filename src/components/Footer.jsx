@@ -19,13 +19,8 @@ export default function Footer() {
         bg-size-[6px_6px]
       "
     >
-      <div className="flex flex-col items-center space-y-4 text-green-950 font-bold tracking-wide uppercase">
-
-        <p className="text-sm opacity-90">
-          © {new Date().getFullYear()} Copyright
-        </p>
-
-        <div className="flex space-x-4">
+      <div className="flex flex-col items-center  space-y-4 text-green-950 font-bold tracking-wide uppercase">
+        <div className="flex space-x-4 justify-baseline">
           {links.map((link) => (
             <Link
               key={link.name}
@@ -42,12 +37,15 @@ export default function Footer() {
                 hover:text-green-950
                 hover:shadow-[0_3px_0_rgba(0,0,0,0.6)]
                 active:translate-y-0.5
-                active:shadow-[0_1px_0_rgba(0,0,0,0.4)]
-              "
-            >
+                active:shadow-[0_1px_0_rgba(0,0,0,0.4)]">
               {link.name}
             </Link>
           ))}
+          <div className="flex justify-center items-center">
+                <p className="text-sm opacity-90">
+                  © {new Date().getFullYear()} Copyright
+                </p>
+          </div>
         </div>
 
       </div>
