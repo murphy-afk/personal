@@ -46,7 +46,7 @@ export default function Contacts() {
               shadow-[0_2px_0_rgba(0,0,0,0.4)]"></span>
           </h2>
           <p className="text-green-900/80 font-semibold text-sm">
-              noemibardare@gmail.com
+            noemibardare@gmail.com
           </p>
         </div>
         <div

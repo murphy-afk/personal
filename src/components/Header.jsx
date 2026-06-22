@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { useState } from "react"
 
 export default function Header() {
@@ -20,10 +20,11 @@ export default function Header() {
         border-b border-green-900/30
         shadow-sm">
       <nav className="flex items-center justify-between">
-
+        <Link to={'/aboutme'}>
         <div className="font-semibold text-lg text-green-900 tracking-wide">
-          MySite
+          NB
         </div>
+        </Link>
         <button
           onClick={() => setOpen(!open)}
           className="

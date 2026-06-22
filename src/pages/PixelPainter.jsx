@@ -11,7 +11,7 @@ export default function PixelPainter() {
     "#F4A261", // peach
     "#E76F51", // coral
     "#000000", // black
-    "#FFFFFF", // white
+    "#EEEAF7", // white
   ];
 
   const [pixels, setPixels] = useState(
