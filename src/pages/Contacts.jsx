@@ -45,12 +45,8 @@ export default function Contacts() {
               bg-green-700/60 border-2 border-green-900 
               shadow-[0_2px_0_rgba(0,0,0,0.4)]"></span>
           </h2>
-          <p className="text-green-900/80 font-semibold">
-            <Link
-              href="mailto:noemibardare@gmail.com"
-              className="hover:text-green-700 transition-all hover:translate-x-1 inline-block">
+          <p className="text-green-900/80 font-semibold text-sm">
               noemibardare@gmail.com
-            </Link>
           </p>
         </div>
         <div

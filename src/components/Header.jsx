@@ -1,50 +1,87 @@
 import { NavLink } from "react-router-dom"
+import { useState } from "react"
 
 export default function Header() {
+  const [open, setOpen] = useState(false)
+
   const navLinks = [
     { name: 'Home', href: '/aboutme' },
     // { name: 'Projects', href: '/projects'},
     { name: 'Contact', href: '/contact' },
-    // { name: 'Blog', href: '/blog' },
     { name: 'Play', href: '/play' },
   ]
 
   return (
     <header
       className="
-        px-8 py-4
-        border-b-4 border-green-900
-        bg-[#D7D3E0]/70
-        backdrop-blur-sm
-        shadow-[0_4px_0_#2C1E2E]
-        bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)]
-        bg-size-[6px_6px]">
-      <nav>
-        <ul className="flex justify-center space-x-4">
+        px-6 py-4
+        bg-[#F4F1FA]/80
+        backdrop-blur-md
+        border-b border-green-900/30
+        shadow-sm">
+      <nav className="flex items-center justify-between">
+
+        <div className="font-semibold text-lg text-green-900 tracking-wide">
+          MySite
+        </div>
+        <button
+          onClick={() => setOpen(!open)}
+          className="
+            md:hidden
+            w-9 h-9
+            rounded-xl
+            bg-[#EEEAF7]
+            border border-green-900/40
+            shadow-[0_2px_0_#C8C2D8]
+            flex flex-col justify-center items-center
+            transition-all">
+          <span className={`h-0.5 w-5 bg-green-900 transition-all ${open ? "rotate-45 translate-y-1" : ""}`}></span>
+          <span className={`h-0.5 w-5 bg-green-900 my-1 transition-all ${open ? "opacity-0" : ""}`}></span>
+          <span className={`h-0.5 w-5 bg-green-900 transition-all ${open ? "-rotate-45 -translate-y-1" : ""}`}></span>
+        </button>
+        <ul className="hidden md:flex space-x-6">
           {navLinks.map((link) => (
             <li key={link.name}>
               <NavLink
                 to={link.href}
                 className={({ isActive }) =>
-                  `
-                  px-4 py-2
-                  font-bold tracking-wide uppercase
-                  border-2 border-green-900
-                  shadow-[0_3px_0_#2C1E2E]
-                  transition-all duration-150
+                  `px-3 py-2 rounded-lg text-sm font-semibold tracking-wide transition-all
                   ${isActive
-                    ? "bg-green-700/60 text-[#2C1E2E] shadow-[0_3px_0_#1A1A1A]"
-                    : "bg-[#EEEAF7] text-green-950 hover:bg-green-700/60 hover:text-[#2C1E2E] hover:shadow-[0_3px_0_#1A1A1A]"
-                  }
-                  active:translate-y-0.5
-                  active:shadow-[0_1px_0_#1A1A1A]
-                `}>
+                    ? "bg-green-200 text-green-900"
+                    : "text-green-900/80 hover:bg-green-100 hover:text-green-900"
+                  }`}>
                 {link.name}
               </NavLink>
             </li>
           ))}
         </ul>
       </nav>
+      <div
+        className={`
+          md:hidden
+          overflow-hidden transition-all duration-300
+          ${open ? "max-h-40 mt-3" : "max-h-0"}`}>
+        <ul className="flex flex-col items-center space-y-3 pb-3">
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <NavLink
+                to={link.href}
+                onClick={() => setOpen(false)}
+                className={({ isActive }) =>
+                  `block px-4 py-2
+                  rounded-lg
+                  text-sm font-semibold tracking-wide
+                  transition-all
+                  ${isActive
+                    ? "bg-green-200 text-green-900"
+                    : "text-green-900/80 hover:bg-green-100 hover:text-green-900"
+                  }`}>
+                {link.name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   )
 }
