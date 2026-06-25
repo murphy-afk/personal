@@ -97,7 +97,7 @@ export default function SnakeGame() {
   );
 
   return (
-    <div className="space-y-6 my-5 flex flex-col items-center touch-none">
+    <div className="space-y-6 my-5 flex flex-col items-center">
       <section className="max-w-md w-full p-6 bg-white/40 backdrop-blur-md border-4 border-green-900 shadow-[0_4px_0_rgba(0,0,0,0.4)]">
         <h1 className="text-2xl font-bold text-green-950 mb-4 uppercase">Snake</h1>
         <p className="font-bold text-green-950 mb-4">Score: {score}</p>
