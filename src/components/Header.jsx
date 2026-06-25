@@ -21,24 +21,24 @@ export default function Header() {
         shadow-sm">
       <nav className="flex items-center justify-between">
         <Link to={'/aboutme'}>
-        <div className="font-semibold text-lg text-green-900 tracking-wide">
-          NB
-        </div>
+          <div className="font-semibold text-lg text-green-900 tracking-wide">
+            NB
+          </div>
         </Link>
         <button
           onClick={() => setOpen(!open)}
           className="
             md:hidden
-            w-9 h-9
+            relative w-9 h-9
             rounded-xl
             bg-[#EEEAF7]
             border border-green-900/40
             shadow-[0_2px_0_#C8C2D8]
-            flex flex-col justify-center items-center
+            flex justify-center items-center
             transition-all">
-          <span className={`h-0.5 w-5 bg-green-900 transition-all ${open ? "rotate-45 translate-y-1" : ""}`}></span>
-          <span className={`h-0.5 w-5 bg-green-900 my-1 transition-all ${open ? "opacity-0" : ""}`}></span>
-          <span className={`h-0.5 w-5 bg-green-900 transition-all ${open ? "-rotate-45 -translate-y-1" : ""}`}></span>
+          <span className={`absolute h-0.5 w-5 bg-green-900 transition-all duration-300 ${open ? "rotate-45" : "-translate-y-1.5"}`}></span>
+          <span className={`absolute h-0.5 w-5 bg-green-900 transition-all duration-300 ${open ? "opacity-0" : ""}`}></span>
+          <span className={`absolute h-0.5 w-5 bg-green-900 transition-all duration-300 ${open ? "-rotate-45" : "translate-y-1.5"}`}></span>
         </button>
         <ul className="hidden md:flex space-x-6">
           {navLinks.map((link) => (
