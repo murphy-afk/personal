@@ -45,7 +45,7 @@ export default function Contacts() {
               bg-green-700/60 border-2 border-green-900 
               shadow-[0_2px_0_rgba(0,0,0,0.4)]"></span>
           </h2>
-          <p className="text-green-900/80 font-semibold text-sm">
+          <p className="text-green-900/80 font-semibold text-xs">
             noemibardare@gmail.com
           </p>
         </div>

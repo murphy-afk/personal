@@ -15,7 +15,7 @@ export default function Footer() {
         bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)]
         bg-size-[6px_6px]">
       <div className="flex flex-wrap justify-center items-center gap-4 text-green-950 font-bold tracking-wide uppercase">
-        
+
         {links.map((link) => (
           <a
             key={link.name}

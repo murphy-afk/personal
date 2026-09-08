@@ -23,7 +23,7 @@ export default function Projects() {
       </section>
 
       <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
-        
+
         {/* Project 1: Back to the retro */}
         <div
           className="
@@ -53,16 +53,16 @@ export default function Projects() {
           </div>
 
           <div className="mt-6 pt-4 border-t-2 border-green-900/30 flex gap-2">
-            <a 
-              href="https://github.com/ilariamotta/back-to-the-retro-frontend" 
-              target="_blank" 
+            <a
+              href="https://github.com/ilariamotta/back-to-the-retro-frontend"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-green-900 text-white text-xs font-bold py-2 px-2 border-2 border-green-950 shadow-[0_2px_0_rgba(0,0,0,0.4)] hover:bg-green-800 transition-all uppercase font-mono">
               Frontend
             </a>
-            <a 
-              href="https://github.com/bellaviagabriele03/backend-team4" 
-              target="_blank" 
+            <a
+              href="https://github.com/bellaviagabriele03/backend-team4"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-green-900 text-white text-xs font-bold py-2 px-2 border-2 border-green-950 shadow-[0_2px_0_rgba(0,0,0,0.4)] hover:bg-green-800 transition-all uppercase font-mono">
               Backend
@@ -99,16 +99,16 @@ export default function Projects() {
           </div>
 
           <div className="mt-6 pt-4 border-t-2 border-green-900/30 flex gap-2">
-            <a 
-              href="https://github.com/murphy-afk/RockAdoptionCenterFE" 
-              target="_blank" 
+            <a
+              href="https://github.com/murphy-afk/RockAdoptionCenterFE"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-green-900 text-white text-xs font-bold py-2 px-2 border-2 border-green-950 shadow-[0_2px_0_rgba(0,0,0,0.4)] hover:bg-green-800 transition-all uppercase font-mono">
               Frontend
             </a>
-            <a 
-              href="https://github.com/murphy-afk/laravel-final-project" 
-              target="_blank" 
+            <a
+              href="https://github.com/murphy-afk/laravel-final-project"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-green-900 text-white text-xs font-bold py-2 px-2 border-2 border-green-950 shadow-[0_2px_0_rgba(0,0,0,0.4)] hover:bg-green-800 transition-all uppercase font-mono">
               Backend
@@ -143,14 +143,14 @@ export default function Projects() {
 
             <div className="mt-4 flex flex-wrap gap-1">
               <span className="inline-block bg-green-900/20 text-green-950 text-xs font-bold px-2 py-0.5 border border-green-900 uppercase font-mono">React</span>
-              <span className="inline-block bg-green-900/20 text-green-950 text-xs font-bold px-2 py-0.5 border border-green-900 uppercase font-mono">Node.js</span>
+              <span className="inline-block bg-green-900/20 text-green-950 text-xs font-bold px-2 py-0.5 border border-green-900 uppercase font-mono">Express</span>
             </div>
           </div>
 
           <div className="mt-6 pt-4 border-t-2 border-green-900/30 flex gap-2">
-            <a 
-              href="https://github.com/murphy-afk/sync-board" 
-              target="_blank" 
+            <a
+              href="https://github.com/murphy-afk/sync-board"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center bg-green-900 text-white text-xs font-bold py-2 px-2 border-2 border-green-950 shadow-[0_2px_0_rgba(0,0,0,0.4)] hover:bg-green-800 transition-all uppercase font-mono">
               Repository
