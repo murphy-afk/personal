@@ -28,8 +28,7 @@ export default function GamesHeader() {
                 hover:text-green-950
                 hover:shadow-[0_3px_0_rgba(0,0,0,0.6)]
                 active:translate-y-0.5
-                active:shadow-[0_1px_0_rgba(0,0,0,0.4)]
-              "> Go back
+                active:shadow-[0_1px_0_rgba(0,0,0,0.4)]"> Go back
               </Link>
             </li>
         </ul>
